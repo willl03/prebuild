@@ -15,13 +15,17 @@
   <remove-project name="CyanogenMod/android_device_samsung_hlte" />
   <project name="temasek/android_device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="cm-12.0" />
   <remove-project name="CyanogenMod/android_device_samsung_hlte-common" />
-  <project name="temasek/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="cm-12.0" />
+  <project name="temasek/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="cm-12.0" /> -->
   <remove-project name="TheMuppets/proprietary_vendor_samsung" />
-  <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.0" /> -->
+  <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.0" />
   <remove-project name="CyanogenMod/android_kernel_samsung_hlte" />
   <project name="temasek/android_kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="staging-v1" />
 
   <!-- W03 -->
+  <!-- device -->
+  <remove-project name="CyanogenMod/android_device_samsung_hlte-common" />
+  <project name="willl03/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="cm-12.0" />
+  <!-- ROM -->
   <remove-project name="CyanogenMod/android_frameworks_base" />
   <project name="willl03/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-12.0" />
   <remove-project name="CyanogenMod/android_packages_apps_Settings" />
