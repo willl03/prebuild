@@ -58,6 +58,9 @@ sleep 1
 ###Build: slim up sounds and update (2/2)
 git cherry-pick 163f5ed413b3e733ba775462029e9eb343fa5329
 sleep 1
+###Do not use block packaging
+git cherry-pick c8ad214ea7ce6bcaeb472e40a14095a9ebc8246d
+sleep 1
 croot
 sleep 1
 
