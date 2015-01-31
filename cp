@@ -76,6 +76,18 @@ sleep 1
 croot
 sleep 1
 
+# ---------------------
+# Frameworks AV
+cd frameworks/av
+sleep 1
+git fetch https://github.com/willl03/android_frameworks_av.git cm-12.0
+sleep 1
+###Forward Port: Add Camera sound toggle [3/3]
+git cherry-pick 75fbd1bfde670878027e2c7c0907a1e225dada70
+sleep 1
+croot
+sleep 1
+
 
 ######################
 
