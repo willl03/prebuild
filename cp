@@ -7,8 +7,9 @@ sleep 1
 # ------------------------------------------
 # ------------------------------------------
 
-# ---------------------
-# vendor cm
+echo ---------------------
+echo vendor/cm
+echo ---------------------
 cd vendor/cm
 sleep 1
 git fetch https://github.com/willl03/android_vendor_cm.git cm-12.0
@@ -43,8 +44,9 @@ sleep 1
 croot
 sleep 1
 
-# ---------------------
-# build
+echo ---------------------
+echo build
+echo ---------------------
 cd build
 sleep 1
 git fetch https://github.com/willl03/android_build.git cm-12.0
@@ -64,20 +66,22 @@ sleep 1
 croot
 sleep 1
 
-# ---------------------
-# InCallUI
+echo ---------------------
+echo InCallUI
+echo ---------------------
 cd packages/apps/InCallUI
 sleep 1
 git fetch https://github.com/willl03/android_packages_apps_InCallUI.git cm-12.0
 sleep 1
 ###Revert "InCallUI: add volume boost and volume enhancement UI" 
-git cherry-pick 11d01d78994adee20dccf254722c83d51852ef8f
+git cherry-pick 1873a05d44bc1a9e9fe755f56742bed734576144
 sleep 1
 croot
 sleep 1
 
-# ---------------------
-# Frameworks AV
+echo ---------------------
+echo frameworks/av
+echo ---------------------
 cd frameworks/av
 sleep 1
 git fetch https://github.com/willl03/android_frameworks_av.git cm-12.0
