@@ -92,6 +92,19 @@ sleep 1
 croot
 sleep 1
 
+echo ---------------------
+echo frameworks/native
+echo ---------------------
+cd frameworks/native
+sleep 1
+git fetch https://github.com/willl03/android_frameworks_native.git cm-12.0
+sleep 1
+###Add 3GB dalvik heap and hwui memory 
+git cherry-pick ec1170ae02540dab60bc2698da96fcade6a272e8
+sleep 1
+croot
+sleep 1
+
 
 ######################
 
