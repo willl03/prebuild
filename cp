@@ -33,13 +33,13 @@ sleep 1
 git cherry-pick 1405ad54091e5b5f8a2be3d1b02ae9459db8d69b
 sleep 1
 ###(1/2) W03ify build name
-git cherry-pick 0df071aa1f276a8a819ec81c75d5d0ba26fe7571
+git cherry-pick b3d3c2785ee65c2b6714eac752124f76956d406c
 sleep 1
 ###Change ring/notif/alarm defaults for Slim sounds
-git cherry-pick d04b29e7c1aa92a51ebc7414bac42032cfe560f5
+git cherry-pick c80007de9d83031b91c3bbe94d191a73ca0ea69f
 sleep 1
 ###Trim cm_audio.mk
-git cherry-pick 2a1352154e44ac3f1f4495079fcd0f7196177882
+git cherry-pick 3a67d61744f309b1ba9491c858c078adae7f6e6f
 sleep 1
 croot
 sleep 1
@@ -55,13 +55,13 @@ sleep 1
 git cherry-pick 8becdc1c96c3606a127cf2208c8a1b5c94623e0c
 sleep 1
 ###W03'ify updater script
-git cherry-pick 3ef2a6f37fc94fd6c6543b13e0283271c2e8cae1
+git cherry-pick ae9b0d1c49e122c976fe7ad8885de57d7477a8ab
 sleep 1
 ###Build: slim up sounds and update (2/2)
-git cherry-pick 163f5ed413b3e733ba775462029e9eb343fa5329
+git cherry-pick 83309bdcb36b188c10d270ce5c842df31a29e618
 sleep 1
 ###Do not use block packaging
-git cherry-pick c8ad214ea7ce6bcaeb472e40a14095a9ebc8246d
+git cherry-pick 43054b01e86301c669352d03fcd0537848d1901b
 sleep 1
 croot
 sleep 1
