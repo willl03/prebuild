@@ -41,6 +41,9 @@ sleep 1
 ###Trim cm_audio.mk
 git cherry-pick 3a67d61744f309b1ba9491c858c078adae7f6e6f
 sleep 1
+###red 1080 bootanimation 
+git cherry-pick d3855e89c45c1cf8388301a1154d57c6988ecdc5
+sleep 1
 croot
 sleep 1
 
