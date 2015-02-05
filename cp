@@ -42,7 +42,10 @@ sleep 1
 git cherry-pick 3a67d61744f309b1ba9491c858c078adae7f6e6f
 sleep 1
 ###red 1080 bootanimation 
-git cherry-pick d3855e89c45c1cf8388301a1154d57c6988ecdc5
+git cherry-pick 6fab95387a48a69b4a8dd855d661d9ab8f63fb2e
+sleep 1
+###Do not build CM Setup Wizard
+git cherry-pick 16517128f3201afbbbbbfa66cbcfe49ce2dea795
 sleep 1
 croot
 sleep 1
