@@ -69,6 +69,9 @@ sleep 1
 ###Do not use block packaging
 git cherry-pick 43054b01e86301c669352d03fcd0537848d1901b
 sleep 1
+###LCD density backup
+git cherry-pick 4af34605195469ff3cdf1ab71ebe0ef4b7459b6f
+sleep 1
 croot
 sleep 1
 
@@ -81,6 +84,9 @@ git fetch https://github.com/willl03/android_packages_apps_InCallUI.git cm-12.0
 sleep 1
 ###Revert "InCallUI: add volume boost and volume enhancement UI" 
 git cherry-pick 1873a05d44bc1a9e9fe755f56742bed734576144
+sleep 1
+###Remove layout-land volume boost 
+git cherry-pick 2fdf04cf2887d3a0b4089b1cc9fc9a506aea2cd0
 sleep 1
 croot
 sleep 1
