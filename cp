@@ -47,6 +47,9 @@ sleep 1
 ###Do not build CM Setup Wizard
 git cherry-pick 16517128f3201afbbbbbfa66cbcfe49ce2dea795
 sleep 1
+###LCD density backup
+git cherry-pick 4af34605195469ff3cdf1ab71ebe0ef4b7459b6f
+sleep 1
 croot
 sleep 1
 
@@ -69,9 +72,6 @@ sleep 1
 ###Do not use block packaging
 git cherry-pick 43054b01e86301c669352d03fcd0537848d1901b
 sleep 1
-###LCD density backup
-git cherry-pick 4af34605195469ff3cdf1ab71ebe0ef4b7459b6f
-sleep 1
 croot
 sleep 1
 
@@ -87,6 +87,19 @@ git cherry-pick 1873a05d44bc1a9e9fe755f56742bed734576144
 sleep 1
 ###Remove layout-land volume boost 
 git cherry-pick 2fdf04cf2887d3a0b4089b1cc9fc9a506aea2cd0
+sleep 1
+croot
+sleep 1
+
+echo ---------------------
+echo ThemesProvider
+echo ---------------------
+cd packages/providers/ThemesProvider
+sleep 1
+git fetch https://github.com/willl03/android_packages_providers_ThemesProvider.git cm-12.0
+sleep 1
+###Themes: Fix SystemUI failing to get themed
+git cherry-pick 324519a87f076448465bed91b3cbd9390fe083ee
 sleep 1
 croot
 sleep 1
@@ -116,6 +129,20 @@ git cherry-pick ec1170ae02540dab60bc2698da96fcade6a272e8
 sleep 1
 croot
 sleep 1
+
+echo ---------------------
+echo hlte kernel
+echo ---------------------
+cd kernel/samsung/hlte
+sleep 1
+git fetch https://github.com/willl03/android_kernel_samsung_hlte.git staging-v1
+sleep 1
+###Downgrade Faux sound to more reliable v3.0
+git cherry-pick 7cff3aaba6f5686e7efd0dc23bfe297acee2d0cc
+sleep 1
+croot
+sleep 1
+
 
 
 ######################
