@@ -69,6 +69,9 @@ sleep 1
 ###Do not use block packaging
 git cherry-pick 1ac3dc0079db5ec215c652900b7e39cd99dc43eb
 sleep 1
+###Create 0 compression ratio jar files
+git cherry-pick ca8a88493fb27ff4d45acd4d9b0b0ef178bc27aa
+sleep 1
 croot
 sleep 1
 
@@ -81,6 +84,32 @@ git fetch https://github.com/willl03/android_packages_apps_InCallUI.git cm-12.1
 sleep 1
 ###Remove Volume Boost UI 
 git cherry-pick b5f0a1713b50655840a23ef5f0e5d06f5624b518
+sleep 1
+croot
+sleep 1
+
+echo ---------------------
+echo frameworks/native
+echo ---------------------
+cd frameworks/native
+sleep 1
+git fetch https://github.com/willl03/android_frameworks_native.git cm-12.1
+sleep 1
+###Add 3GB dalvik heap and hwui memory 
+git cherry-pick 339b4fb28c4fb5f6bd276fc35881ce473e5ab42f
+sleep 1
+croot
+sleep 1
+
+echo ---------------------
+echo frameworks/av
+echo ---------------------
+cd frameworks/av
+sleep 1
+git fetch https://github.com/willl03/android_frameworks_av.git cm-12.1
+sleep 1
+###Forward Port: Add Camera sound toggle [3/3]
+git cherry-pick bc6ae500ed2b21b427221bca5e133f3e6d651ca8
 sleep 1
 croot
 sleep 1
