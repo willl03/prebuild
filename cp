@@ -47,6 +47,9 @@ sleep 1
 ###Do not build CM Setup Wizard
 git cherry-pick 3ef649f59682965b12ae5fced5e56b81b82cf26a
 sleep 1
+###Do not build CM Account app 
+git cherry-pick aa4ae9e7092964262cf8a1806ba57a11e3c49fdf
+sleep 1
 croot
 sleep 1
 
@@ -60,9 +63,6 @@ sleep 1
 ###(2/2) W03ify build name
 git cherry-pick d4cb3034634d706200506f98d2a04aa2b868019b
 sleep 1
-###W03'ify updater script
-git cherry-pick 896cdf036e86cb4f9b4483676f93fa477ca9d20b
-sleep 1
 ###Build: slim up sounds and update (2/2)
 git cherry-pick 710eee32af82bf81d024c957b5b781b1993c5125
 sleep 1
@@ -71,6 +71,9 @@ git cherry-pick 1ac3dc0079db5ec215c652900b7e39cd99dc43eb
 sleep 1
 ###Create 0 compression ratio jar files
 git cherry-pick ca8a88493fb27ff4d45acd4d9b0b0ef178bc27aa
+sleep 1
+###W03'ify updater script
+git cherry-pick 79c6bfc7bc9d948f13330e70c80f7333bbdfe508
 sleep 1
 croot
 sleep 1
@@ -82,8 +85,21 @@ cd packages/apps/InCallUI
 sleep 1
 git fetch https://github.com/willl03/android_packages_apps_InCallUI.git cm-12.1
 sleep 1
-###Remove Volume Boost UI 
-git cherry-pick b5f0a1713b50655840a23ef5f0e5d06f5624b518
+###Hide volume boost button
+git cherry-pick 1a0520a776a2b365c176fcdbacf41c780ff41048
+sleep 1
+croot
+sleep 1
+
+echo ---------------------
+echo Dialer
+echo ---------------------
+cd packages/apps/Dialer
+sleep 1
+git fetch https://github.com/willl03/android_packages_apps_Dialer.git cm-12.1
+sleep 1
+###Enable Call Recording
+git cherry-pick 03697cf64224a5950ba33c3191ee57f587cfb7e9
 sleep 1
 croot
 sleep 1
@@ -119,10 +135,10 @@ echo hlte kernel
 echo ---------------------
 cd kernel/samsung/hlte
 sleep 1
-git fetch https://github.com/willl03/android_kernel_samsung_hlte.git staging-v1
+git fetch https://github.com/willl03/android_kernel_samsung_hlte.git staging-v2
 sleep 1
 ###Downgrade Faux sound to more reliable v3.0
-git cherry-pick 2c638767175e7ce705049a391ce1eda1f03cd05c
+git cherry-pick ca969d4ba57f6824e91e52f51dcf301329412439
 sleep 1
 croot
 sleep 1

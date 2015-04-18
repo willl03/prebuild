@@ -12,11 +12,17 @@
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-12.1" />
 
+  <!-- Note 4 Base -->
+  <!-- CM12.1 -->
+  <project name="CyanogenMod/android_kernel_samsung_trlte" path="kernel/samsung/trlte" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_samsung_trlte-common" path="device/samsung/trlte-common" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_samsung_trltetmo" path="device/samsung/trltetmo" remote="github" revision="cm-12.1" />
+
   <!-- Use Temasek -->
   <remove-project name="TheMuppets/proprietary_vendor_samsung" />
   <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.0" />
   <remove-project name="CyanogenMod/android_kernel_samsung_hlte" />
-  <project name="temasek/android_kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="staging-v1" />
+  <project name="temasek/android_kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="staging-v2" />
 
   <!-- W03 -->
   <!-- device -->
