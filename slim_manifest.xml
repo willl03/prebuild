@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="SlimRoms/device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="lp5.1" />
+  <project name="SlimRoms/device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="lp5.1" />
+  <project name="SlimRoms/kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="lp5.1" />
+  <project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="lp5.1" />
+  <project name="SlimRoms/device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" revision="lp5.1" />
+  <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="lp5.1" />
+  <project name="TheLoonyBin/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="github" revision="lp5.0" />
+
+  <!-- Use Temasek -->
+  <remove-project name="TheLoonyBin/proprietary_vendor_samsung" />
+  <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
+  <remove-project name="SlimRoms/kernel_samsung_hlte" />
+  <project name="temasek/android_kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="staging-v2" />
+
+  <!-- W03 -->
+  <!-- device -->
+  <remove-project name="SlimRoms/device_samsung_hlte" />
+  <project name="willl03/android_device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="lp5.1" />
+  <remove-project name="SlimRoms/device_samsung_hlte-common" />
+  <project name="willl03/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="lp5.1" />
+
+</manifest>
