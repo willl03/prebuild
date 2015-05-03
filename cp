@@ -99,7 +99,7 @@ sleep 1
 git fetch https://github.com/willl03/android_packages_apps_Dialer.git cm-12.1
 sleep 1
 ###Enable Call Recording
-git cherry-pick 03697cf64224a5950ba33c3191ee57f587cfb7e9
+git cherry-pick 55f24f79c99c86ecb19635b96d26f001b57c3131
 sleep 1
 croot
 sleep 1
