@@ -23,12 +23,6 @@ sleep 1
 ###Add a few Samsung media sounds
 git cherry-pick 27e01105ee681926f7a84b9f9d476a9d8ce15234
 sleep 1
-###apns-conf: Replace obsolete Luxgsm Internet with POST MMS & POST
-git cherry-pick 53d0009d5d95649aa5a04f08fc43db9e23c0098f
-sleep 1
-###apns-conf: Remove Bell Canada web proxy
-git cherry-pick e082a38f7606eb48a13695c2e6c509d6d0b62bfc
-sleep 1
 ###Remove CM Updater
 git cherry-pick 3c368f311e7eef413598f9fba82850d39a57438b
 sleep 1
@@ -50,6 +44,9 @@ sleep 1
 ###Do not build CM Account app 
 git cherry-pick aa4ae9e7092964262cf8a1806ba57a11e3c49fdf
 sleep 1
+###apns-conf: Remove Bell Canada web proxy
+git cherry-pick a4bd392f31a4e5c5b34e5e1ec81ba4aaabb0d393
+sleep 1
 croot
 sleep 1
 
@@ -66,14 +63,14 @@ sleep 1
 ###Build: slim up sounds and update (2/2)
 git cherry-pick 710eee32af82bf81d024c957b5b781b1993c5125
 sleep 1
-###Do not use block packaging
-git cherry-pick 1ac3dc0079db5ec215c652900b7e39cd99dc43eb
-sleep 1
 ###Create 0 compression ratio jar files
 git cherry-pick ca8a88493fb27ff4d45acd4d9b0b0ef178bc27aa
 sleep 1
 ###W03'ify updater script
 git cherry-pick 79c6bfc7bc9d948f13330e70c80f7333bbdfe508
+sleep 1
+###Do not use block packaging
+git cherry-pick 60c3ecb4cb91120312136a68e013d548fe5a3d00
 sleep 1
 croot
 sleep 1
@@ -99,7 +96,7 @@ sleep 1
 git fetch https://github.com/willl03/android_packages_apps_Dialer.git cm-12.1
 sleep 1
 ###Enable Call Recording
-git cherry-pick 55f24f79c99c86ecb19635b96d26f001b57c3131
+git cherry-pick 06b520262c9903bff11cdae9f31e9626eb6d0a33
 sleep 1
 croot
 sleep 1
@@ -138,8 +135,8 @@ sleep 1
 git fetch https://github.com/willl03/android_kernel_samsung_hlte.git staging-v2
 sleep 1
 ###Fix build
-git reset --hard bc46e505217f43d53fe8818f5649699132fd7045
-sleep 1
+###git reset --hard bc46e505217f43d53fe8818f5649699132fd7045
+###sleep 1
 ###Downgrade Faux sound to more reliable v3.0
 git cherry-pick ca969d4ba57f6824e91e52f51dcf301329412439
 sleep 1
