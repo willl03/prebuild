@@ -18,6 +18,12 @@
   <project name="CyanogenMod/android_device_samsung_trlte-common" path="device/samsung/trlte-common" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_device_samsung_trltetmo" path="device/samsung/trltetmo" remote="github" revision="cm-12.1" /> -->
 
+  <!-- GS5 Base -->
+  <!-- CM12.1 -->
+  <project name="CyanogenMod/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_samsung_klte" path="device/samsung/klte" remote="github" revision="cm-12.1" />
+
   <!-- Use Temasek -->
   <remove-project name="TheMuppets/proprietary_vendor_samsung" />
   <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-12.1" />
