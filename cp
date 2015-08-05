@@ -45,8 +45,8 @@ sleep 1
 git cherry-pick aa4ae9e7092964262cf8a1806ba57a11e3c49fdf
 sleep 1
 ###apns-conf: Remove Bell Canada web proxy
-git cherry-pick a4bd392f31a4e5c5b34e5e1ec81ba4aaabb0d393
-sleep 1
+###git cherry-pick a4bd392f31a4e5c5b34e5e1ec81ba4aaabb0d393
+###sleep 1
 croot
 sleep 1
 
