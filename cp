@@ -39,14 +39,14 @@ sleep 1
 git cherry-pick cf7855b77ebe88d8febeb9e8bf1f85454771c39a
 sleep 1
 ###Do not build CM Setup Wizard
-git cherry-pick 3ef649f59682965b12ae5fced5e56b81b82cf26a
+git cherry-pick 7f8e56b958b8962cec7d80aa1dace7a05ca7ad67
 sleep 1
 ###Do not build CM Account app 
-git cherry-pick aa4ae9e7092964262cf8a1806ba57a11e3c49fdf
+git cherry-pick c3aa65bd33ca1d17e81ca2dcfbdc94467c783786
 sleep 1
 ###apns-conf: Remove Bell Canada web proxy
-###git cherry-pick a4bd392f31a4e5c5b34e5e1ec81ba4aaabb0d393
-###sleep 1
+git cherry-pick 45eb25567c9c727c27ae2032dd8644ad171eeed6
+sleep 1
 croot
 sleep 1
 
@@ -96,8 +96,8 @@ sleep 1
 git fetch https://github.com/willl03/android_packages_apps_Dialer.git cm-12.1
 sleep 1
 ###Enable Call Recording
-git cherry-pick 06b520262c9903bff11cdae9f31e9626eb6d0a33
-sleep 1
+###git cherry-pick 06b520262c9903bff11cdae9f31e9626eb6d0a33
+###sleep 1
 croot
 sleep 1
 
@@ -134,9 +134,6 @@ cd kernel/samsung/hlte
 sleep 1
 git fetch https://github.com/willl03/android_kernel_samsung_hlte.git staging-v2
 sleep 1
-###Fix build
-###git reset --hard bc46e505217f43d53fe8818f5649699132fd7045
-###sleep 1
 ###Downgrade Faux sound to more reliable v3.0
 git cherry-pick ca969d4ba57f6824e91e52f51dcf301329412439
 sleep 1
